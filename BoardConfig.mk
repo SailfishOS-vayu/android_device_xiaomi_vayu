@@ -24,6 +24,9 @@ TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_vayu
 # Kernel
 TARGET_KERNEL_CONFIG := vayu_user_defconfig
 
+# ADD MKBOOT CMD DTB
+BOARD_MKBOOTIMG_ARGS += --dtb device/xiaomi/vayu/dtb-img/dtb
+
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
